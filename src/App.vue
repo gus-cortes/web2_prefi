@@ -1,10 +1,23 @@
 <template>
+  <Head/>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/cart">Cart</router-link>
   </div>
   <router-view/>
 </template>
+
+<script>
+
+import Head from './components/partials/header.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Head
+  }
+}
+</script>
 
 <style>
 #app {
